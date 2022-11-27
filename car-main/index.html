@@ -50,7 +50,6 @@
         background: url('bgcar.jpeg');
         background-repeat: no-repeat;
         background-size:100% 100%;
-        /* above statement is to hide both vertical and horizantal scrollbar */
     }
     .startscreen{        font-family: cursive;
     margin: auto;
@@ -83,15 +82,15 @@
     }
 </style>
 <body>
-    <div class="score hide">score :</div>
-    <div class="startscreen ">click to start </div>
+    <div class="score hide">Pontuação :</div>
+    <div class="startscreen ">Clique para começar</div>
     <div class="gamearea hide"></div>
 </body>
 <script>
     let score=document.querySelector('.score');
     let startscreen=document.querySelector('.startscreen');
     let gamearea=document.querySelector('.gamearea');
-    let speed=4;
+    let speed=1;
     let speed1=5;
     let score1=0;
     let music =new Audio('music.mp3');
@@ -218,7 +217,7 @@
     {
 		gamearea.innerHTML = ''
 		gamearea.classList.add('hide')
-		startscreen.innerHTML = 'Click to replay'
+		startscreen.innerHTML = 'Clique para jogar denovo'
 		startscreen.classList.remove('hide')
 		score.classList.add('hide')
 		score1 = 0
