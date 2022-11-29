@@ -207,7 +207,7 @@
     }
     function iscollide(a,b)
     {
-    // below code is to get all 4 position of car
+        
         acar=a.getBoundingClientRect();
         bcar=b.getBoundingClientRect();
         return !((acar.top>=bcar.bottom)|| (acar.left>=bcar.right) || (acar.right<=bcar.left)||(acar.bottom<=bcar.top));
