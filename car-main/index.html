@@ -69,7 +69,7 @@
     .score{
         height: 44px;
     width: 135px;
-    background-color: blue;
+    background-color: green;
     color: white;
     font-size: 30px;
     padding-top: 4px;
@@ -90,8 +90,8 @@
     let score=document.querySelector('.score');
     let startscreen=document.querySelector('.startscreen');
     let gamearea=document.querySelector('.gamearea');
-    let speed=1;
-    let speed1=5;
+    let speed=3;
+    let speed1=6;
     let score1=0;
     let music =new Audio('music.mp3');
     let crash=new Audio('crash.wav');
@@ -188,8 +188,8 @@
         if(item.y>600)
         {score1++;
         item.y-=645;
-        item.style.left=(Math.random()*330 + 25) + "px";
-        // pass.play();
+        item.style.left=(Math.random()*310 + 25) + "px";
+
         }
          item.y+=speed;
        speed+=0.0002;
@@ -221,7 +221,7 @@
 		startscreen.classList.remove('hide')
 		score.classList.add('hide')
 		score1 = 0
-	        speed1=5
+	        speed1=6
     }
 </script>
 </html>
